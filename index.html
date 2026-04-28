@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letní dovolená se psem (Votice - Rakousko - Itálie - Německo)</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #34495e;
+            --accent: #3498db;
+            --success: #27ae60;
+            --warning: #f39c12;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+        }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            max-width: 1100px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background-color: var(--bg-color); 
+        }
+        header { 
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); 
+            color: white; 
+            padding: 40px 20px; 
+            text-align: center; 
+            border-radius: 12px; 
+            margin-bottom: 30px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 { margin: 0 0 10px 0; font-size: 2.5em; }
+        h2 { color: var(--primary); border-bottom: 2px solid var(--accent); padding-bottom: 5px; margin-top: 0; }
+        p.subtitle { font-size: 1.2em; opacity: 0.9; margin: 5px 0; }
+
+        .section { 
+            background: var(--card-bg); 
+            padding: 30px; 
+            margin-bottom: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+        }
+
+        .layout-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .content-col {
+            flex: 1 1 500px;
+        }
+        .image-col {
+            flex: 1 1 350px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .image-col img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+            max-height: 300px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .image-col img:hover {
+            transform: scale(1.02);
+        }
+
+        .map-btn { 
+            display: inline-block; 
+            background: var(--success); 
+            color: white; 
+            padding: 12px 25px; 
+            text-decoration: none; 
+            border-radius: 8px; 
+            font-weight: bold; 
+            font-size: 1.1em;
+            transition: background 0.3s ease;
+            text-align: center;
+        }
+        .map-btn:hover { background: #219a52; }
+
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.95em; }
+        th, td { padding: 15px; border-bottom: 1px solid #eee; text-align: left; }
+        th { background-color: #f8f9fa; font-weight: 600; color: var(--secondary); }
+        tr:hover { background-color: #f8f9fa; }
+
+        .info-box { padding: 15px 20px; border-radius: 8px; margin: 15px 0; }
+        .costs { background-color: #e8f4f8; border-left: 4px solid var(--accent); }
+        .dog-info { background-color: #fff3e0; border-left: 4px solid var(--warning); }
+
+        .link { color: var(--accent); text-decoration: none; font-weight: 500; }
+        .link:hover { text-decoration: underline; }
+
+        @media (max-width: 768px) {
+            .layout-grid { flex-direction: column; }
+            header { padding: 20px; }
+            h1 { font-size: 2em; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🏔️ Roadtrip Střední Evropou se Psem 🐾</h1>
+        <p class="subtitle">12denní letní výlet: Votice ➔ Zell am See ➔ Dolomity ➔ Bavorský les</p>
+        <p><strong>Odhadovaný rozpočet:</strong> 50 - 60 000 Kč (4 dospělí + 1 pes)</p>
+    </header>
+
+    <div class="section" style="text-align: center;">
+        <h2 style="border-bottom: none;">🗺️ Interaktivní mapa trasy</h2>
+        <p>Celková trasa je navržena pro minimalizaci dlouhých přejezdů. Celkový nájezd je zhruba 1 050 km.</p>
+        <a href="https://www.google.com/maps/dir/Votice%2C%20%C4%8Cesko/Zell%20am%20See%2C%20Rakousko/San%20Vito%20di%20Cadore%2C%20It%C3%A1lie/Neusch%C3%B6nau%2C%20N%C4%9Bmecko/Votice%2C%20%C4%8Cesko" target="_blank" class="map-btn">📍 Otevřít trasu v Google Maps</a>
+    </div>
+
+    <div class="section">
+        <h2>🇦🇹 Etapa 1: Rakousko (Zell am See) - Dny 1 až 4</h2>
+        <p><strong>Přejezd:</strong> Votice ➔ Zell am See (cca 350 km, 4h 15m)</p>
+        <div class="layout-grid">
+            <div class="content-col">
+                <table>
+                    <tr><th>Den</th><th>Program / Túra</th><th>Čas & Délka</th></tr>
+                    <tr><td>1.</td><td>Příjezd, odpočinková procházka podél jezera Zeller See. Ubytování v okolí.</td><td>-</td></tr>
+                    <tr><td>2.</td><td><a href="https://www.klamm-kaprun.at/en/" target="_blank" class="link">Soutěska Sigmund Thun Klamm</a>. Chodníčky nad řekou, koupání psa v Klammsee.</td><td>320m soutěska. Čas: 1-2h celkem.</td></tr>
+                    <tr><td>3.</td><td><a href="https://www.schmitten.at/en" target="_blank" class="link">Promenáda Schmittenhöhe</a>. Hřebenovka od lanovky k vrcholu Sonnkogel.</td><td>2,5 km. Čas: 1,5 h. Lehká trasa.</td></tr>
+                    <tr><td>4.</td><td>Dopolední nákupy. Po obědě přesun autem do Itálie (Dolomity).</td><td>-</td></tr>
+                </table>
+                <div class="info-box costs"><strong>💸 Náklady:</strong> Dálniční známka 32 € (2 měsíce), Soutěska 8,50 € / dospělý.</div>
+                <div class="info-box dog-info"><strong>🐾 Pes v Rakousku:</strong> Lanovky (Kitzsteinhorn, Schmittenhöhe) striktně vyžadují vodítko a nasazený náhubek.</div>
+            </div>
+            <div class="image-col">
+                <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/87a6be5125b005d2f9013f173226c56311a2e0ca.jpg" alt="Zell am See Lake">
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🇮🇹 Etapa 2: Itálie (San Vito di Cadore & Dolomity) - Dny 4 až 8</h2>
+        <p><strong>Přejezd:</strong> Zell am See ➔ San Vito di Cadore (cca 170 km, 2h 45m)</p>
+        <div class="layout-grid">
+            <div class="content-col">
+                <table>
+                    <tr><th>Den</th><th>Program / Túra</th><th>Čas & Délka</th></tr>
+                    <tr><td>4.</td><td>Příjezd a ubytování. Večerní Lunga Via delle Dolomiti (cyklostezka).</td><td>-</td></tr>
+                    <tr><td>5.</td><td><a href="https://www.suedtirol.info/en/experience/lago-di-braies" target="_blank" class="link">Okruh kolem Lago di Braies</a>. Vyrazit do 7:00 ráno!</td><td>3,5 km. Čas: 1,5 až 2 h.</td></tr>
+                    <tr><td>6.</td><td><a href="https://www.cortina.dolomiti.org/en/summer/cinque-torri/" target="_blank" class="link">Túra Cinque Torri & Rifugio Nuvolau</a>. Výjezd lanovkou, pěší výstup k chatě.</td><td>cca 6 km. Čas: 3 - 4 hodiny.</td></tr>
+                    <tr><td>7.</td><td><a href="https://tre-cime.info/" target="_blank" class="link">Tre Cime di Lavaredo</a>. Okruh od chaty Rifugio Auronzo (mýto za vjezd).</td><td>cca 10 km. Čas: 3 až 4 hodiny.</td></tr>
+                    <tr><td>8.</td><td>Brzký ranní odjezd na sever směrem do Německa.</td><td>-</td></tr>
+                </table>
+                <div class="info-box costs"><strong>💸 Náklady:</strong> Mýto Tre Cime cca 30 €, Brennerský průsmyk 12 € x2.</div>
+                <div class="info-box dog-info"><strong>🐾 Pes v Itálii:</strong> Náhubek nutný u sebe (do lanovek povinně). Pozor na rozpálený kamenitý povrch přes poledne.</div>
+            </div>
+            <div class="image-col">
+                <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/3c48d208b0edac80d95d59329ab8e6b96ce88006.jpg" alt="Cinque Torri Dolomites">
+                <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/daa30ee29583270a1a6d478659ea99298bd21d7e.jpg" alt="Dolomites Path">
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🇩🇪 Etapa 3: Německo (Bavorský les) - Dny 8 až 12</h2>
+        <p><strong>Přejezd:</strong> San Vito di Cadore ➔ Neuschönau (cca 360 km, 4h 45m)</p>
+        <div class="layout-grid">
+            <div class="content-col">
+                <table>
+                    <tr><th>Den</th><th>Program / Túra</th><th>Čas & Délka</th></tr>
+                    <tr><td>8.</td><td>Dlouhý přejezd přes průsmyky, ubytování u hranic s ČR.</td><td>-</td></tr>
+                    <tr><td>9.</td><td><a href="https://www.nationalpark-bayerischer-wald.bayern.de/besucher/einrichtungen/tierfreigelaende/lusen/" target="_blank" class="link">Tier-Freigelände Neuschönau</a>. Lesní obory (medvědi, vlci, rysi).</td><td>7 km okruh. Čas: 2,5 až 4 h.</td></tr>
+                    <tr><td>10.</td><td>Jezero Großer Arbersee (rovinatý okruh) a lanovka na Velký Javor.</td><td>1,5 km okruh jezerem (30 min).</td></tr>
+                    <tr><td>11.</td><td><a href="https://treetop-walks.com/bayerischer-wald/" target="_blank" class="link">Stezka v korunách stromů</a>. Návštěva unikátní 44m vysoké věže.</td><td>Čas: cca 1,5 h.</td></tr>
+                    <tr><td>12.</td><td>Návrat z Neuschönau zpět domů do Votic (cca 130 km, 2h). Konec dovolené!</td><td>-</td></tr>
+                </table>
+                <div class="info-box costs"><strong>💸 Náklady:</strong> Stezka v korunách stromů 13 € / dospělý. Zvířecí obory ZDARMA (pouze parkování).</div>
+                <div class="info-box dog-info"><strong>🐾 Pes v Německu:</strong> Na Stezku v korunách stromů pes nesmí. K dispozici jsou bezplatné stinné "čekací boxy" s vodou u pokladny. Do zvířecích oborů může pes na vodítku.</div>
+            </div>
+            <div class="image-col">
+                <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/4437d82987d78c1a53c4f61eb1637e3da82eec01.jpg" alt="Baumwipfelpfad Bayerischer Wald">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
