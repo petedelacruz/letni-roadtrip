@@ -72,6 +72,24 @@
             transform: scale(1.02);
         }
 
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 15px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
         .map-btn { 
             display: inline-block; 
             background: var(--success); 
@@ -115,12 +133,11 @@
     <div class="section" style="text-align: center;">
         <h2 style="border-bottom: none;">🗺️ Interaktivní mapa trasy</h2>
         <p>Celková trasa je navržena pro minimalizaci dlouhých přejezdů s ubytováním v Rakousku, Itálii a Německu.</p>
-        <!-- Aktualizovaný odkaz na mapu zahrnující Perarolo di Cadore -->
         <a href="https://www.google.com/maps/dir/Votice,+%C4%8Cesko/Zell+am+See,+Rakousko/Perarolo+di+Cadore,+It%C3%A1lie/Neusch%C3%B6nau,+N%C4%9Bmecko/Votice,+%C4%8Cesko" target="_blank" class="map-btn">📍 Otevřít upravenou trasu v Google Maps</a>
     </div>
 
     <div class="section">
-        <h2>Etapa 1: Rakousko (Zell am See) - Dny 1 až 4</h2>
+        <h2>🇦🇹 Etapa 1: Rakousko (Zell am See) - Dny 1 až 4</h2>
         <p><strong>Přejezd:</strong> Votice ➔ Zell am See (cca 350 km, 4h 15m)</p>
         <div class="layout-grid">
             <div class="content-col">
@@ -141,30 +158,34 @@
     </div>
 
     <div class="section">
-        <h2>Etapa 2: Itálie (Perarolo di Cadore & Dolomity) - Dny 4 až 8</h2>
+        <h2>🇮🇹 Etapa 2: Itálie (Perarolo di Cadore & Dolomity) - Dny 4 až 8</h2>
         <p><strong>Přejezd:</strong> Zell am See ➔ Perarolo di Cadore (cca 200 km, 3h)</p>
         <div class="layout-grid">
             <div class="content-col">
                 <table>
                     <tr><th>Den</th><th>Program / Túra</th><th>Čas & Délka</th></tr>
-                    <tr><td>4.</td><td>Příjezd a ubytování v Perarolu. Krátká procházka na visutý <strong>Ponte Tibetano (Passerella Sospesa)</strong> přímo ve vsi.</td><td>103m dlouhý most, 15 min chůze od auta.</td></tr>
+                    <tr><td>4.</td><td>Příjezd do Perarola. Krátká procházka na visutý <a href="https://visitperarolodicadore.it/scopri-perarolo/ponte-tibetano/" target="_blank" class="link">Ponte Tibetano (Passerella Sospesa)</a>.</td><td>103m dlouhý most, 10 min chůze od parkoviště Ansogne.</td></tr>
                     <tr><td>5.</td><td><a href="https://www.suedtirol.info/en/experience/lago-di-braies" target="_blank" class="link">Lago di Braies</a>. <strong>Dlouhý přejezd z Perarola (1,5 h)!</strong> Vyrazte autem už v 5:30 ráno.</td><td>3,5 km okruh. Čas: 1,5 až 2 h.</td></tr>
                     <tr><td>6.</td><td><a href="https://www.cortina.dolomiti.org/en/summer/cinque-torri/" target="_blank" class="link">Túra Cinque Torri & Rifugio Nuvolau</a>. Přejezd z Perarola (cca 1h), výjezd lanovkou a pěší výstup k chatě.</td><td>cca 6 km. Čas: 3 - 4 hodiny.</td></tr>
                     <tr><td>7.</td><td><a href="https://tre-cime.info/" target="_blank" class="link">Tre Cime di Lavaredo</a>. Přejezd k mýtné bráně (cca 1h 15m). Okruh od chaty Rifugio Auronzo.</td><td>cca 10 km. Čas: 3 až 4 hodiny.</td></tr>
                     <tr><td>8.</td><td>Brzký ranní odjezd na sever směrem do Německa.</td><td>-</td></tr>
                 </table>
                 <div class="info-box costs"><strong>💸 Náklady:</strong> Mýto Tre Cime cca 30 €, Brennerský průsmyk 12 € x2, Tibetský most je ZDARMA.</div>
-                <div class="info-box dog-info"><strong>🐾 Pes v Itálii:</strong> Náhubek nutný u sebe. <strong>Pozor na Tibetský most v Perarolu:</strong> podlaha je z kovových roštů, které mohou psa velmi bolet. Přeneste ho nebo ho nechte na břehu.</div>
+                <div class="info-box dog-info"><strong>🐾 Pes v Itálii:</strong> Náhubek nutný u sebe. <strong>Pozor na Tibetský most v Perarolu:</strong> podlaha je z kovových roštů, které propouští sníh a vítr, takže psa velmi bolí na tlapky. Přeneste ho, nebo ho nechte s dozorem na břehu.</div>
             </div>
             <div class="image-col">
+                <!-- YouTube video embed for Ponte Tibetano Val Montina -->
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/lXQv-fOBAUs?start=165" title="Ponte Tibetano della Val Montina" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p style="text-align: center; font-size: 0.85em; color: #7f8c8d; margin-top: 0;">Ponte Tibetano v Perarolo di Cadore (Val Montina)</p>
                 <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/3c48d208b0edac80d95d59329ab8e6b96ce88006.jpg" alt="Cinque Torri Dolomites">
-                <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/daa30ee29583270a1a6d478659ea99298bd21d7e.jpg" alt="Dolomites Path">
             </div>
         </div>
     </div>
 
     <div class="section">
-        <h2>Etapa 3: Německo (Bavorský les) - Dny 8 až 12</h2>
+        <h2>🇩🇪 Etapa 3: Německo (Bavorský les) - Dny 8 až 12</h2>
         <p><strong>Přejezd:</strong> Perarolo di Cadore ➔ Neuschönau (cca 390 km, 5h 15m)</p>
         <div class="layout-grid">
             <div class="content-col">
@@ -177,7 +198,7 @@
                     <tr><td>12.</td><td>Návrat z Neuschönau zpět domů do Votic (cca 130 km, 2h). Konec dovolené!</td><td>-</td></tr>
                 </table>
                 <div class="info-box costs"><strong>💸 Náklady:</strong> Stezka v korunách stromů 13 € / dospělý. Zvířecí obory ZDARMA (pouze parkování).</div>
-                <div class="info-box dog-info"><strong>🐾 Pes v Německu:</strong> Na Stezku v korunách stromů pes nesmí. K dispozici jsou bezplatné stinné "čekací boxy" s vodou u pokladny. Do zvířecích oborů může pes na vodítku.</div>
+                <div class="info-box dog-info"><strong>🐾 Pes v Německu:</strong> Na Stezku v korunách stromů pes nesmí. K dispozici sono bezplatné stinné "čekací boxy" s vodou u pokladny. Do zvířecích oborů může pes na vodítku.</div>
             </div>
             <div class="image-col">
                 <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/4437d82987d78c1a53c4f61eb1637e3da82eec01.jpg" alt="Baumwipfelpfad Bayerischer Wald">
